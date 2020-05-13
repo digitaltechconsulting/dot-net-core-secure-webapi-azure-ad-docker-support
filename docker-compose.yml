@@ -1,0 +1,19 @@
+version: "3"
+services:
+  secure-web-api:
+    build: ./SecureWebApi
+    image: digitaltechconsulting/secure-web-api:latest
+    container_name: secure-web-api
+    ports: 
+      - "8080:80"      
+    environment: 
+      ENV: test
+      READ_AZUREAD_FROM_ENVIRONMENT: "true"
+      INSTANCE: https://login.microsoftonline.com/
+      DOMAIN: {yourdomain}.onmicrosoft.com
+      TENANTID: {your tenant id}
+      CLIENTID: {your client id}
+      ASPNETCORE_URLS: https://+:443;http://+:80
+
+
+    
