@@ -13,7 +13,12 @@ Alternatively, you can use [Docker Hub Image](https://hub.docker.com/repository/
 
 You can also use `docker-compose` command to construct the container.  After updating [this](https://github.com/digitaltechconsulting/dot-net-core-secure-webapi-azure-ad-docker-support/blob/master/docker-compose.yml) file with the required variables i.e. `Instance`,`Domain`, `TenantId` and `ClientId` run below command
 
+PUll the image
 `
-docker-compose up -d
+docker pull digitaltechconsulting/secure-web-api:latest
+`
+
+`
+docker-compose up -d --no-build
 `
 
