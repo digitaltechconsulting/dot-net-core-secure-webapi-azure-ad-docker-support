@@ -1,5 +1,5 @@
 # Tutorial: Build dot Net Core Web API protected by Azure AD
-A simple Azure AD secured, dot net core Web API with Docker support
+A simple Azure AD secured, dot net core Web API with Docker support.
 
 ## Getting Started
 
@@ -9,7 +9,9 @@ Follow [this](https://www.youtube.com/watch?v=srJZCCvst8o&t=78s) turorial to set
    - TenantId
    - ClientId
 
-Alternatively, you can use [Docker Hub Image](https://hub.docker.com/repository/docker/digitaltechconsulting/secure-web-api) and pass `Instance` , `Domain`, `TenantId` and `ClientId` parameters while creating the contianer.
+If you don't want to download and buid code, you can use [Docker Hub Image](https://hub.docker.com/repository/docker/digitaltechconsulting/secure-web-api) and pass `Instance` , `Domain`, `TenantId` and `ClientId` parameters while creating the contianer.
+
+> Before setting up docker container on your machine you will need to register client in your Azure Active Directory and collect `Instance` , `Domain`, `TenantId`, `ClientId` parameters
 
 You can also use `docker-compose` command to construct the container.  After updating [this](https://github.com/digitaltechconsulting/dot-net-core-secure-webapi-azure-ad-docker-support/blob/master/docker-compose.yml) file with the required variables i.e. `Instance`,`Domain`, `TenantId` and `ClientId` run below command
 
@@ -23,9 +25,8 @@ Once you have downloaded `digitaltechconsulting/secure-web-api:latest` on your m
 
 ### `docker-compose` approach
 - Make sure you are in the same directory where your [`docker-compose.yml`](https://github.com/digitaltechconsulting/dot-net-core-secure-webapi-azure-ad-docker-support/blob/master/docker-compose.yml) file is
-- 
+- Replace `INSTANCE` , `DOMAIN` , `TENANTID` and `CLIENTID` values
 - Run below command
-
 `
 docker-compose up -d --no-build
 `
