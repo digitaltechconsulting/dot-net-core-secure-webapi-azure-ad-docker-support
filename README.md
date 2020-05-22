@@ -35,3 +35,9 @@ docker-compose up -d --no-build
 
 ### `docker run`  approach
 
+Run below command after pulling latest image
+
+`
+docker run --name secure-web-api -d -p 8080:80 -e "READ_AZUREAD_FROM_ENVIRONMENT=true" -e "INSTANCE=https://login.microsoftonline.com/" -e "DOMAIN=--YOUR DOMAIN--" -e "TENANTID=--YOUR TENANTID--" -e "CLIENTID=--YOUR CLIENTID--" -e "ASPNETCORE_URLS=https://+:443;http://+:80" digitaltechconsulting/secure-web-api:latest
+`
+
