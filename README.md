@@ -32,7 +32,7 @@ Once you have downloaded `digitaltechconsulting/secure-web-api:latest` on your m
 `
 docker-compose up -d --no-build
 `
----
+
 ### `docker run`  approach
 
 Run below command after pulling latest image
