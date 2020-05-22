@@ -21,9 +21,14 @@ docker pull digitaltechconsulting/secure-web-api:latest
 
 Once you have downloaded `digitaltechconsulting/secure-web-api:latest` on your machine.  You can setup container using `docker-compose` OR  `docker run` command
 
-- If you are using `docker-compose`  make sure you are in the same directory where your [`docker-compose.yml`](https://github.com/digitaltechconsulting/dot-net-core-secure-webapi-azure-ad-docker-support/blob/master/docker-compose.yml) file is
+### `docker-compose` approach
+- Make sure you are in the same directory where your [`docker-compose.yml`](https://github.com/digitaltechconsulting/dot-net-core-secure-webapi-azure-ad-docker-support/blob/master/docker-compose.yml) file is
+- 
+- Run below command
 
 `
 docker-compose up -d --no-build
 `
+
+### `docker run`  approach
 
