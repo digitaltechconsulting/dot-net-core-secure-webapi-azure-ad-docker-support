@@ -28,6 +28,7 @@ Once you have downloaded `digitaltechconsulting/secure-web-api:latest` on your m
 - Make sure you are in the same directory where your [`docker-compose.yml`](https://github.com/digitaltechconsulting/dot-net-core-secure-webapi-azure-ad-docker-support/blob/master/docker-compose.yml) file is
 - Replace `INSTANCE` , `DOMAIN` , `TENANTID` and `CLIENTID` values
 - Run below command
+
 `
 docker-compose up -d --no-build
 `
