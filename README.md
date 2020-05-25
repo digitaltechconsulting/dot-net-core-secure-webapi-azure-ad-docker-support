@@ -18,7 +18,7 @@ You can also use `docker-compose` command to construct the container.  After upd
 
 PUll the image
 `
-docker pull digitaltechconsulting/secure-web-api:latest
+docker pull digitaltechconsulting/secure-web-api:1.0
 `
 ## Setting up container on your machine
 
